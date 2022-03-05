@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-##### An adaptation of the popular "Hangman" wordgame for Project 1 of GA's SEIR
+##### An adaptation of the popular "Hangman" word game for Project 1 of GA's SEIR
 
 ---
 
