@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-##### An adaptation of the popular "Hangman" word game for Project 1 of GA's SEIR
+##### An adaptation of the popular "Hangman" word game for Project 1 of GA's SEIR. This kid-friendly rendition of Hangman uses photos of hand-drawn snowman sketches instead of the traditional gallows images. First, one player submits a mystery word in the form. The other player must guess the correct word by selecting letters one by one from a series of alphabet buttons. For each incorrect guess, a single part of the snowman disappears. The goal of the game is to correctly guess the word and save the snowman from melting.
 
 ---
 
