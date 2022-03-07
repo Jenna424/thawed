@@ -37,8 +37,8 @@ let wordInProgressChars = []
 let isGameOver = false
 const selectedLetters = []
 
-const getIsLetterAlreadySelected = (clickedLetter) => {
-  return selectedLetters.some((ltr) => ltr === clickedLetter)
+const getIsLetterSelected = (letter) => {
+  return selectedLetters.some((selectedLetter) => selectedLetter === letter)
 }
 
 const selectLetter = (clickedAlphaButton) => {
@@ -52,7 +52,7 @@ const handleLetterSelection = (event) => {
   if (isGameOver) {
     return
   }
-  if (getIsLetterAlreadySelected(letter)) {
+  if (getIsLetterSelected(letter)) {
     alert('You have already guessed that letter! Please try again.')
     return
   }
