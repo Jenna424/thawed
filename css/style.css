@@ -16,6 +16,22 @@ header {
   margin-top: 30px;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+li:first-child {
+  margin-right: 3px;
+}
+
+li:last-child {
+  margin-left: 3px;
+}
+
 .game-wrapper {
   display: flex;
   flex-direction: column;
