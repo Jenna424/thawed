@@ -1,4 +1,9 @@
+// Global variables that store DOM nodes
+const mysteryWordForm = document.getElementById('mystery-word-form')
+const mysteryWordInput = document.getElementById('mystery-word-input')
 const alphaButtonsWrapper = document.querySelector('.alpha-btns-wrapper')
+const wordInProgressWrapper = document.querySelector('.wip-wrapper')
+// Global variables that describe game state
 const alphabetArray = [
   'A',
   'B',
@@ -27,6 +32,8 @@ const alphabetArray = [
   'Y',
   'Z'
 ]
+let mysteryWord = ''
+let wordInProgressChars = []
 
 const handleLetterSelection = (event) => {
   alert(`clicked ${event.target.value}!`)
@@ -44,4 +51,28 @@ const buildAlphaButtons = () => {
   })
 }
 
-buildAlphaButtons()
+const handleFormSubmission = (event) => {
+  event.preventDefault()
+  // Prevent the user from entering an empty string
+  if (!mysteryWordInput.value.trim().length) {
+    alert('The mystery word cannot be blank!')
+    return
+  }
+  // Store a sanitized mysteryWord that's uppercased and stripped of whitespace
+  mysteryWord = mysteryWordInput.value.trim().replace(/\s/g, '').toUpperCase()
+  // Clear the textfield
+  mysteryWordInput.value = ''
+  // Display the mystery word as a series of asterisks
+  const asterisksArray = mysteryWord.split('').map((ltr) => '*')
+  wordInProgressChars = asterisksArray
+  const asteriskSpans = asterisksArray.map(
+    (asterisk) => `<span class="wip-part">${asterisk}</span>`
+  )
+  wordInProgressWrapper.innerHTML = asteriskSpans.join('')
+  // Hide the form
+  mysteryWordForm.classList.add('hidden')
+  // Generate the alphabet buttons
+  buildAlphaButtons()
+}
+
+mysteryWordForm.addEventListener('submit', handleFormSubmission)
