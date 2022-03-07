@@ -69,3 +69,15 @@ img {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 3px;
 }
+
+.alpha-btn {
+  padding: 5px;
+  background-color: palegoldenrod;
+  cursor: pointer;
+}
+
+.selected {
+  color: gray;
+  background-color: lightgray;
+  cursor: default;
+}
