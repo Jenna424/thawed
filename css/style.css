@@ -48,3 +48,10 @@ img {
   width: 300px;
   height: 400px;
 }
+
+.alpha-btns-wrapper {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3px;
+}
