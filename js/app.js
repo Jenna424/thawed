@@ -34,9 +34,29 @@ const alphabetArray = [
 ]
 let mysteryWord = ''
 let wordInProgressChars = []
+let isGameOver = false
+const selectedLetters = []
+
+const isLetterAlreadySelected = (clickedLetter) => {
+  return selectedLetters.some((ltr) => ltr === clickedLetter)
+}
+
+const selectLetter = (clickedAlphaButton) => {
+  clickedAlphaButton.classList.add('selected')
+  selectedLetters.push(clickedAlphaButton.value)
+}
 
 const handleLetterSelection = (event) => {
-  alert(`clicked ${event.target.value}!`)
+  const clickedAlphaButton = event.target
+  const letter = clickedAlphaButton.value
+  if (isGameOver) {
+    return
+  }
+  if (isLetterAlreadySelected(letter)) {
+    alert('You have already guessed that letter! Please try again.')
+    return
+  }
+  selectLetter(clickedAlphaButton)
 }
 
 const buildAlphaButtons = () => {
