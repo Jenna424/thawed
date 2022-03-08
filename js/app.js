@@ -3,6 +3,7 @@ const mysteryWordForm = document.getElementById('mystery-word-form')
 const mysteryWordInput = document.getElementById('mystery-word-input')
 const alphaButtonsWrapper = document.querySelector('.alpha-btns-wrapper')
 const wordInProgressWrapper = document.querySelector('.wip-wrapper')
+const gameStatusHeading = document.getElementById('game-status-heading')
 // Global variables that describe game state
 const alphabetArray = [
   'A',
@@ -46,6 +47,40 @@ const selectLetter = (clickedAlphaButton) => {
   selectedLetters.push(clickedAlphaButton.value)
 }
 
+const getIsCorrectLetter = (letter) => {
+  return mysteryWord.includes(letter)
+}
+
+const spellWordInProgress = () => {
+  wordInProgressChars = mysteryWord.split('').map((ltr) => {
+    return selectedLetters.includes(ltr) ? ltr : '*'
+  })
+  const wordInProgressStringSpans = wordInProgressChars.map((char) => {
+    return `<span class="wip-part">${char}</span>`
+  })
+  wordInProgressWrapper.innerHTML = wordInProgressStringSpans.join('')
+}
+
+const verifyVictory = () => {
+  return mysteryWord === wordInProgressChars.join('')
+}
+
+const endGame = (victorious = false) => {
+  isGameOver = true
+  if (victorious) {
+    gameStatusHeading.innerText = 'Victory!'
+  } else {
+    gameStatusHeading.innerText = 'Declare defeat. The snowman has melted.'
+  }
+}
+
+const handleLetterInclusion = (letter) => {
+  spellWordInProgress()
+  if (verifyVictory()) {
+    endGame(true)
+  }
+}
+
 const handleLetterSelection = (event) => {
   const clickedAlphaButton = event.target
   const letter = clickedAlphaButton.value
@@ -57,6 +92,11 @@ const handleLetterSelection = (event) => {
     return
   }
   selectLetter(clickedAlphaButton)
+  if (getIsCorrectLetter(letter)) {
+    handleLetterInclusion()
+  } else {
+    handleLetterExclusion()
+  }
 }
 
 const buildAlphaButtons = () => {
@@ -83,12 +123,7 @@ const handleFormSubmission = (event) => {
   // Clear the textfield
   mysteryWordInput.value = ''
   // Display the mystery word as a series of asterisks
-  const asterisksArray = mysteryWord.split('').map((ltr) => '*')
-  wordInProgressChars = asterisksArray
-  const asteriskSpans = asterisksArray.map(
-    (asterisk) => `<span class="wip-part">${asterisk}</span>`
-  )
-  wordInProgressWrapper.innerHTML = asteriskSpans.join('')
+  spellWordInProgress()
   // Hide the form
   mysteryWordForm.classList.add('hidden')
   // Generate the alphabet buttons
