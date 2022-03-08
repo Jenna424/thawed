@@ -1,4 +1,3 @@
-// Global variables that store DOM nodes
 const mysteryWordForm = document.getElementById('mystery-word-form')
 const mysteryWordInput = document.getElementById('mystery-word-input')
 const snowmanImage = document.getElementById('snowman-image')
@@ -7,7 +6,6 @@ const alphaButtonsWrapper = document.querySelector('.alpha-btns-wrapper')
 const wordInProgressWrapper = document.querySelector('.wip-wrapper')
 const gameStatusHeading = document.getElementById('game-status-heading')
 const restartGameButton = document.getElementById('restart-game-btn')
-// Global variables that describe game state
 const alphabetArray = [
   'A',
   'B',
