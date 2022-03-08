@@ -72,8 +72,13 @@ img {
 
 .alpha-btn {
   padding: 5px;
-  background-color: palegoldenrod;
+  background-color: #f0e586;
+  box-shadow: 0 2px #e6d860;
   cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 25px;
 }
 
 .selected {
