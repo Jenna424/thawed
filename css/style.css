@@ -63,6 +63,7 @@ form input {
 input[type='submit'] {
   font-family: inherit;
   color: cornflowerblue;
+  cursor: pointer;
 }
 
 .hidden {
