@@ -61,10 +61,6 @@ const spellWordInProgress = () => {
   wordInProgressWrapper.innerHTML = wordInProgressStringSpans.join('')
 }
 
-const verifyVictory = () => {
-  return mysteryWord === wordInProgressChars.join('')
-}
-
 const endGame = (victorious = false) => {
   isGameOver = true
   if (victorious) {
@@ -76,7 +72,9 @@ const endGame = (victorious = false) => {
 
 const handleLetterInclusion = (letter) => {
   spellWordInProgress()
-  if (verifyVictory()) {
+  // If the mysteryWord matches the word-in-progress,
+  // I've verified a victory, so end the game accordingly.
+  if (mysteryWord === wordInProgressChars.join('')) {
     endGame(true)
   }
 }
