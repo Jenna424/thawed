@@ -71,9 +71,9 @@ const endGame = (victorious = false) => {
 }
 
 const handleLetterInclusion = (letter) => {
+  // Adjust the spelling of the word-in-progress to incorporate the correctly guessed letter.
   spellWordInProgress()
-  // If the mysteryWord matches the word-in-progress,
-  // I've verified a victory, so end the game accordingly.
+  // If the mysteryWord matches the word-in-progress, I've verified a victory, so end the game victoriously.
   if (mysteryWord === wordInProgressChars.join('')) {
     endGame(true)
   }
