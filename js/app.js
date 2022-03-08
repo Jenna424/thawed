@@ -81,6 +81,11 @@ const handleLetterInclusion = (letter) => {
   }
 }
 
+const incrementIncorrectGuessCount = () => {
+  incorrectGuessCount += 1
+  incorrectGuessTracker.innerText = incorrectGuessCount
+}
+
 const handleLetterSelection = (event) => {
   const clickedAlphaButton = event.target
   const letter = clickedAlphaButton.value
