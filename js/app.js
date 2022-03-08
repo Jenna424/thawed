@@ -1,6 +1,7 @@
 // Global variables that store DOM nodes
 const mysteryWordForm = document.getElementById('mystery-word-form')
 const mysteryWordInput = document.getElementById('mystery-word-input')
+const snowmanImage = document.getElementById('snowman-image')
 const incorrectGuessTracker = document.getElementById('incorrect-guess-tracker')
 const alphaButtonsWrapper = document.querySelector('.alpha-btns-wrapper')
 const wordInProgressWrapper = document.querySelector('.wip-wrapper')
