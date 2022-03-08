@@ -40,7 +40,7 @@ let wordInProgressChars = []
 let isGameOver = false
 const selectedLetters = []
 let incorrectGuessCount = 0
-const incorrectGuessCap = 10
+const incorrectGuessCap = 9
 
 const getIsLetterSelected = (letter) => {
   return selectedLetters.some((selectedLetter) => selectedLetter === letter)
@@ -94,6 +94,15 @@ const setSnowmanSketch = () => {
     'alt',
     `${incorrectGuessCount}/${incorrectGuessCap} thawed`
   )
+}
+
+const handleLetterExclusion = () => {
+  incrementIncorrectGuessCount()
+  setSnowmanSketch()
+  // If the incorrectGuessCount equals the incorrectGuessCap, the user has lost, so end the game accordingly.
+  if (incorrectGuessCount === incorrectGuessCap) {
+    endGame()
+  }
 }
 
 const handleLetterSelection = (event) => {
