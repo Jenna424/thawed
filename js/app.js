@@ -177,6 +177,7 @@ const removeAlphaButtons = () => {
 
 const resetDefaults = () => {
   isGameOver = false
+  gameStatusHeading.innerText = ''
   resetMysteryWord()
   resetIncorrectRecord()
   setSnowmanSketch()
