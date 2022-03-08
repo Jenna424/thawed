@@ -61,9 +61,9 @@ const spellWordInProgress = () => {
   wordInProgressWrapper.innerHTML = wordInProgressStringSpans.join('')
 }
 
-const endGame = (victorious = false) => {
+const endGame = (victoriously = false) => {
   isGameOver = true
-  if (victorious) {
+  if (victoriously) {
     gameStatusHeading.innerText = 'Victory! You saved the snowman from melting.'
   } else {
     gameStatusHeading.innerText = 'Declare defeat. The snowman has melted.'
