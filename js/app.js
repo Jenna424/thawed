@@ -6,6 +6,7 @@ const incorrectGuessTracker = document.getElementById('incorrect-guess-tracker')
 const alphaButtonsWrapper = document.querySelector('.alpha-btns-wrapper')
 const wordInProgressWrapper = document.querySelector('.wip-wrapper')
 const gameStatusHeading = document.getElementById('game-status-heading')
+const restartGameButton = document.getElementById('restart-game-btn')
 // Global variables that describe game state
 const alphabetArray = [
   'A',
