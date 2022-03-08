@@ -40,6 +40,7 @@ let wordInProgressChars = []
 let isGameOver = false
 const selectedLetters = []
 let incorrectGuessCount = 0
+const incorrectGuessCap = 10
 
 const getIsLetterSelected = (letter) => {
   return selectedLetters.some((selectedLetter) => selectedLetter === letter)
@@ -85,6 +86,14 @@ const handleLetterInclusion = (letter) => {
 const incrementIncorrectGuessCount = () => {
   incorrectGuessCount += 1
   incorrectGuessTracker.innerText = incorrectGuessCount
+}
+
+const setSnowmanSketch = () => {
+  snowmanImage.setAttribute('src', `images/snowman${incorrectGuessCount}.png`)
+  snowmanImage.setAttribute(
+    'alt',
+    `${incorrectGuessCount}/${incorrectGuessCap} thawed`
+  )
 }
 
 const handleLetterSelection = (event) => {
