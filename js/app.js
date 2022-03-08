@@ -39,7 +39,7 @@ const alphabetArray = [
 let mysteryWord = ''
 let wordInProgressChars = []
 let isGameOver = false
-const selectedLetters = []
+let selectedLetters = []
 let incorrectGuessCount = 0
 const incorrectGuessCap = 9
 
