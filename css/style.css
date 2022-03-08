@@ -6,7 +6,7 @@
 
 body {
   background-color: #c6e6f7;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lora', serif;
   width: 100vw;
   height: 100vh;
 }
@@ -46,6 +46,10 @@ form {
 
 .hidden {
   display: none;
+}
+
+.visible {
+  display: block;
 }
 
 img {
