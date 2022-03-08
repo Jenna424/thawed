@@ -5,6 +5,7 @@
 }
 
 body {
+  color: cornflowerblue;
   background-color: #c6e6f7;
   font-family: 'Lora', serif;
   width: 100vw;
@@ -31,6 +32,17 @@ li:first-child {
 
 li:last-child {
   margin-left: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+  padding: 3px;
+}
+
+a:hover {
+  color: yellow;
+  background-color: cornflowerblue;
 }
 
 .game-wrapper {
