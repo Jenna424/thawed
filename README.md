@@ -30,13 +30,13 @@
 
 ### **_Future Updates_**
 
-- [ ] Future Update 1
-- [ ] Future Update 2
-- [x] Completed Update
-- [x] ~~Strikethrough~~ Items Also
+- [ ] Display the correct word on game loss
+- [ ] Keep track of game history and display game statistics
 
 ---
 
 ### **_Credits_**
 
 ##### **MDN Documentation:** [mozilla.org](https://developer.mozilla.org/en-US/)
+
+##### **Unsplash:** [unsplash.com](https://unsplash.com/photos/H9m6mfeeakU)
