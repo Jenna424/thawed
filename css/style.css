@@ -56,6 +56,15 @@ form {
   margin: 20px 0;
 }
 
+form input {
+  padding: 3px;
+}
+
+input[type='submit'] {
+  font-family: inherit;
+  color: cornflowerblue;
+}
+
 .hidden {
   display: none;
 }
