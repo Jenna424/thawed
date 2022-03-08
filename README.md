@@ -24,7 +24,7 @@
 
 ### **_Getting Started_**
 
-##### Steps to get started go here ...
+##### Navigate to thawed.surge.sh, enter a word of your choice in the form, and have another player guess the letters included in the word by clicking the alphabet buttons.
 
 ---
 
