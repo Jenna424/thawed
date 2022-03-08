@@ -84,3 +84,14 @@ img {
   cursor: pointer;
   background-color: #e6d860;
 }
+
+.selected {
+  color: #9f9f9f;
+  background-color: #d3d3de;
+  box-shadow: 0 2px #9f9f9f;
+}
+
+.alpha-btn.selected:hover {
+  background-color: #d3d3d3;
+  cursor: default;
+}
