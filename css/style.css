@@ -74,15 +74,13 @@ img {
   padding: 5px;
   background-color: #f0e586;
   box-shadow: 0 2px #e6d860;
-  cursor: pointer;
   border: none;
   border-radius: 6px;
   font-size: 15px;
   width: 25px;
 }
 
-.selected {
-  color: gray;
-  background-color: lightgray;
-  cursor: default;
+.alpha-btn:hover {
+  cursor: pointer;
+  background-color: #e6d860;
 }
