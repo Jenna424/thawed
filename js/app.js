@@ -37,6 +37,7 @@ let mysteryWord = ''
 let wordInProgressChars = []
 let isGameOver = false
 const selectedLetters = []
+let incorrectGuessCount = 0
 
 const getIsLetterSelected = (letter) => {
   return selectedLetters.some((selectedLetter) => selectedLetter === letter)
