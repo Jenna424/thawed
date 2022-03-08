@@ -155,4 +155,35 @@ const handleFormSubmission = (event) => {
   buildAlphaButtons()
 }
 
+// Clears the mystery word and displays the empty form for mystery word submission
+const resetMysteryWord = () => {
+  mysteryWord = ''
+  mysteryWordForm.classList.remove('hidden')
+  mysteryWordForm.classList.add('visible')
+}
+
+// Erases the record of incorrect guesses
+const resetIncorrectRecord = () => {
+  incorrectGuessCount = 0
+  incorrectGuessTracker.innerText = incorrectGuessCount
+}
+
+// Removes alphabet button nodes, which are generated on mystery word form submission
+const removeAlphaButtons = () => {
+  document
+    .querySelectorAll('.alpha-btn')
+    .forEach((alphaButtonNode) => alphaButtonNode.remove())
+}
+
+const resetDefaults = () => {
+  isGameOver = false
+  resetMysteryWord()
+  resetIncorrectRecord()
+  setSnowmanSketch()
+  selectedLetters = []
+  spellWordInProgress()
+  removeAlphaButtons()
+}
+
 mysteryWordForm.addEventListener('submit', handleFormSubmission)
+restartGameButton.addEventListener('click', resetDefaults)
