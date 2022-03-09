@@ -101,8 +101,7 @@ const setSnowmanSketch = () => {
 const handleLetterExclusion = () => {
   incrementIncorrectGuessCount()
   setSnowmanSketch()
-  // If the incorrectGuessCount equals the incorrectGuessCap, the user has lost, so end the game accordingly.
-  if (incorrectGuessCount === incorrectGuessCap) {
+  if (incorrectGuessCount >= incorrectGuessCap) {
     endGame()
   }
 }
