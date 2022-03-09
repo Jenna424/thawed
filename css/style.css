@@ -24,7 +24,10 @@ header {
 }
 
 h1 {
-  color: #ff781f;
+  font-size: 45px;
+  -webkit-text-fill-color: #8fc7db;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: cornflowerblue;
 }
 
 ul {
@@ -73,12 +76,25 @@ form {
 
 form input {
   padding: 3px;
+  outline: none;
+}
+
+form label {
+  color: #fa8128;
 }
 
 input[type='submit'] {
   font-family: inherit;
-  color: cornflowerblue;
+  color: #fa8128;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type='submit']:hover {
+  color: white;
+  background-color: #fa8128;
 }
 
 .hidden {
