@@ -26,8 +26,12 @@ header {
 h1 {
   font-size: 45px;
   -webkit-text-fill-color: #8fc7db;
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: cornflowerblue;
+}
+
+body.instructions-body h1 {
+  -webkit-text-stroke-color: white;
 }
 
 ul {
