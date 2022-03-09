@@ -50,7 +50,7 @@ const selectLetter = (clickedAlphaButton) => {
   selectedLetters.push(clickedAlphaButton.value)
 }
 
-const getIsCorrectLetter = (letter) => {
+const getIsLetterCorrect = (letter) => {
   return mysteryWord.includes(letter)
 }
 
@@ -115,7 +115,7 @@ const handleLetterSelection = (event) => {
     return
   }
   selectLetter(clickedAlphaButton)
-  if (getIsCorrectLetter(letter)) {
+  if (getIsLetterCorrect(letter)) {
     handleLetterInclusion()
   } else {
     handleLetterExclusion()
