@@ -117,12 +117,12 @@ input[type='submit']:hover {
 img {
   width: 300px;
   height: 400px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .wip-wrapper {
   color: #f28500;
-  margin: 10px;
+  margin-top: 15px;
 }
 
 .wip-part {
