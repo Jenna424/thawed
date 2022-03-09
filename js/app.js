@@ -139,13 +139,13 @@ const buildAlphaButtons = () => {
 
 const handleFormSubmission = (event) => {
   event.preventDefault()
-  // Prevent the user from entering an empty string
+  // Prevent the user from leaving the field blank
   if (!mysteryWordInput.value.trim().length) {
     alert('The mystery word cannot be blank!')
     return
   }
   // Store a sanitized mysteryWord that's uppercased and stripped of whitespace
-  mysteryWord = mysteryWordInput.value.trim().replace(/\s/g, '').toUpperCase()
+  mysteryWord = mysteryWordInput.value.replace(/\s/g, '').toUpperCase()
   // Clear the textfield
   mysteryWordInput.value = ''
   // Display the mystery word as a series of asterisks
