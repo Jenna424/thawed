@@ -53,13 +53,13 @@ li:last-child {
 
 a {
   text-decoration: none;
-  color: cornflowerblue;
+  color: #74b3ce;
   padding: 4px;
 }
 
 a:hover {
-  color: yellow;
-  background-color: cornflowerblue;
+  color: lightgoldenrodyellow;
+  background-color: #74b3ce;
   border-radius: 3px;
 }
 
