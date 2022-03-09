@@ -121,8 +121,8 @@ img {
 }
 
 .wip-wrapper {
-  margin: 10px 0;
   color: #f28500;
+  margin: 10px;
 }
 
 .wip-part {
@@ -136,7 +136,7 @@ img {
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 6px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .alpha-btn {
@@ -167,11 +167,10 @@ img {
 
 #game-status-heading {
   color: orangered;
-  margin: 10px 0;
+  margin: 15px;
 }
 
 #restart-game-btn {
-  margin-top: 10px;
   padding: 10px;
   font-family: inherit;
   font-size: 15px;
@@ -179,6 +178,7 @@ img {
   background-color: #9dc183;
   border-radius: 6px;
   border: none;
+  margin: 10px;
 }
 
 #restart-game-btn:hover {
