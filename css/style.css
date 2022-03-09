@@ -173,15 +173,15 @@ img {
   padding: 10px;
   font-family: inherit;
   font-size: 15px;
-  color: black;
-  background-color: #d0f0c0;
+  color: white;
+  background-color: #9dc183;
   border-radius: 6px;
   border: none;
 }
 
 #restart-game-btn:hover {
   cursor: pointer;
-  background-color: #9dc183;
+  background-color: #7d9a68;
 }
 
 .instructions-wrapper p {
