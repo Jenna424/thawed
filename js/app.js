@@ -144,8 +144,13 @@ const handleFormSubmission = (event) => {
     alert('The mystery word cannot be blank!')
     return
   }
-  // Store a sanitized mysteryWord that's uppercased and stripped of whitespace
-  mysteryWord = mysteryWordInput.value.replace(/\s/g, '').toUpperCase()
+  // Ensure the mysteryWord only contains letters
+  if (!mysteryWordInput.value.match(/^[a-zA-Z]+$/)) {
+    alert('Please enter a valid word.')
+    return
+  }
+  // Store a sanitized mysteryWord that's uppercased
+  mysteryWord = mysteryWordInput.value.toUpperCase()
   // Clear the textfield
   mysteryWordInput.value = ''
   // Display the mystery word as a series of asterisks
