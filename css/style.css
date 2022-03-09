@@ -178,6 +178,7 @@ img {
   background-color: #9dc183;
   border-radius: 6px;
   border: none;
+  margin-bottom: 5px;
 }
 
 #restart-game-btn:hover {
