@@ -69,7 +69,7 @@ const endGame = (victoriously = false) => {
   if (victoriously) {
     gameStatusHeading.innerText = 'Victory! You saved the snowman from melting.'
   } else {
-    gameStatusHeading.innerText = 'Declare defeat. The snowman has melted.'
+    gameStatusHeading.innerText = `You lost on the word '${mysteryWord}.' The snowman has melted.`
   }
 }
 
