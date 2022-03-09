@@ -166,6 +166,7 @@ const resetMysteryWord = () => {
   mysteryWord = ''
   mysteryWordForm.classList.remove('hidden')
   mysteryWordForm.classList.add('visible')
+  mysteryWordInput.value = ''
 }
 
 // Erases the record of incorrect guesses
