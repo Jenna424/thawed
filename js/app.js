@@ -164,7 +164,7 @@ const resetMysteryWord = () => {
 }
 
 // Erases the record of incorrect guesses
-const resetIncorrectRecord = () => {
+const resetIncorrectGuessCount = () => {
   incorrectGuessCount = 0
   incorrectGuessTracker.innerText = incorrectGuessCount
 }
@@ -180,7 +180,7 @@ const resetGameDefaults = () => {
   isGameOver = false
   gameStatusHeading.innerText = ''
   resetMysteryWord()
-  resetIncorrectRecord()
+  resetIncorrectGuessCount()
   setSnowmanSketch()
   selectedLetters = []
   spellWordInProgress()
