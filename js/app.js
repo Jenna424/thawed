@@ -58,10 +58,10 @@ const spellWordInProgress = () => {
   wordInProgressChars = mysteryWord.split('').map((ltr) => {
     return selectedLetters.includes(ltr) ? ltr : '*'
   })
-  const wordInProgressStringSpans = wordInProgressChars.map((char) => {
+  const wordInProgressSpanStrings = wordInProgressChars.map((char) => {
     return `<span class="wip-part">${char}</span>`
   })
-  wordInProgressWrapper.innerHTML = wordInProgressStringSpans.join('')
+  wordInProgressWrapper.innerHTML = wordInProgressSpanStrings.join('')
 }
 
 const endGame = (victoriously = false) => {
