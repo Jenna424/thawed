@@ -57,13 +57,18 @@ a {
   padding: 4px;
 }
 
-.instructions-pg-link {
-  color: black;
-}
-
 a:hover {
   color: yellow;
   background-color: cornflowerblue;
+}
+
+.instructions-pg-link {
+  color: white;
+}
+
+.instructions-pg-link:hover {
+  color: white;
+  background-color: #3792cb;
 }
 
 .game-wrapper,
