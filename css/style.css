@@ -166,7 +166,8 @@ img {
 }
 
 #game-status-heading {
-  margin: 5px 0;
+  color: orangered;
+  margin: 10px 0;
 }
 
 #restart-game-btn {
