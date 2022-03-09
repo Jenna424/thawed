@@ -89,12 +89,12 @@ form input {
 }
 
 form label {
-  color: #fa8128;
+  color: #f28500;
 }
 
 input[type='submit'] {
   font-family: inherit;
-  color: #fa8128;
+  color: #f28500;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -122,6 +122,7 @@ img {
 
 .wip-wrapper {
   margin: 10px 0;
+  color: #f28500;
 }
 
 .wip-part {
