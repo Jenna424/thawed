@@ -176,7 +176,7 @@ const removeAlphaButtons = () => {
     .forEach((alphaButtonNode) => alphaButtonNode.remove())
 }
 
-const resetDefaults = () => {
+const resetGameDefaults = () => {
   isGameOver = false
   gameStatusHeading.innerText = ''
   resetMysteryWord()
@@ -188,4 +188,4 @@ const resetDefaults = () => {
 }
 
 mysteryWordForm.addEventListener('submit', handleFormSubmission)
-restartGameButton.addEventListener('click', resetDefaults)
+restartGameButton.addEventListener('click', resetGameDefaults)
