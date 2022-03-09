@@ -60,6 +60,7 @@ a {
 a:hover {
   color: yellow;
   background-color: cornflowerblue;
+  border-radius: 3px;
 }
 
 .instructions-pg-link {
