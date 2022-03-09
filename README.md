@@ -30,7 +30,7 @@
 
 ### **_Future Updates_**
 
-- [ ] Display the correct word on game loss
+- [x] Display the correct word on game loss
 - [ ] Keep track of game history and display game statistics
 
 ---
