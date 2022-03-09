@@ -124,6 +124,7 @@ const handleLetterSelection = (event) => {
   }
 }
 
+// Creates a series of buttons that each corresponds to a letter in the alphabet
 const buildAlphaButtons = () => {
   const buttonStringsArray = []
   for (let i = 0; i < alphabetArray.length; i++) {
