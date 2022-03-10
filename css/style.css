@@ -65,11 +65,10 @@ a:hover {
 }
 
 .instructions-pg-link {
-  color: white;
+  color: #ffffff;
 }
 
 .instructions-pg-link:hover {
-  color: white;
   background-color: #93b3cf;
 }
 
