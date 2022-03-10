@@ -147,7 +147,9 @@ const handleFormSubmission = (event) => {
   }
   // Ensure the mysteryWord only contains letters
   if (!mysteryWordInput.value.match(/^[a-zA-Z]+$/)) {
-    alert('Please enter a valid word.')
+    alert(
+      'Letters only, please! The mystery word cannot contain spaces, numbers, or special characters.'
+    )
     mysteryWordInput.value = ''
     return
   }
