@@ -91,7 +91,10 @@ const incrementIncorrectGuessCount = () => {
 }
 
 const setSnowmanSketch = () => {
-  snowmanImage.setAttribute('src', `images/snowman${incorrectGuessCount}.png`)
+  snowmanImage.setAttribute(
+    'src',
+    `images/melting-stage-${incorrectGuessCount}.png`
+  )
   snowmanImage.setAttribute(
     'alt',
     `${incorrectGuessCount}/${incorrectGuessCap} thawed`
