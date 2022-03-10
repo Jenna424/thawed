@@ -2,7 +2,7 @@ const mysteryWordForm = document.getElementById('mystery-word-form')
 const mysteryWordInput = document.getElementById('mystery-word-input')
 const snowmanImage = document.getElementById('snowman-image')
 const incorrectGuessTracker = document.getElementById('incorrect-guess-tracker')
-const wordInProgressWrapper = document.querySelector('.wip-wrapper')
+const wordScratchpad = document.querySelector('.word-scratchpad')
 const alphaButtonsWrapper = document.querySelector('.alpha-btns-wrapper')
 const gameStatusHeading = document.getElementById('game-status-heading')
 const restartGameButton = document.getElementById('restart-game-btn')
@@ -61,7 +61,7 @@ const spellWordInProgress = () => {
   const wordInProgressSpanStrings = wordInProgressChars.map((char) => {
     return `<span class="wip-part">${char}</span>`
   })
-  wordInProgressWrapper.innerHTML = wordInProgressSpanStrings.join('')
+  wordScratchpad.innerHTML = wordInProgressSpanStrings.join('')
 }
 
 const endGame = (victoriously = false) => {
