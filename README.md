@@ -41,8 +41,8 @@
 
 ### **_Future Updates_**
 
-- [x] Display the correct word on game loss
 - [ ] Keep track of game history and display game statistics
+- [ ] Implement basic, intermediate, and advanced levels of difficulty
 
 ---
 
