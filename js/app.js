@@ -121,11 +121,7 @@ const handleLetterSelection = (event) => {
     return
   }
   selectLetter(clickedAlphaButton)
-  if (getIsLetterCorrect(letter)) {
-    handleLetterInclusion()
-  } else {
-    handleLetterExclusion()
-  }
+  getIsLetterCorrect(letter) ? handleLetterInclusion() : handleLetterExclusion()
 }
 
 // Creates a series of buttons that each corresponds to a letter in the alphabet
