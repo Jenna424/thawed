@@ -29,7 +29,7 @@
 
 ### **_Getting Started_**
 
-##### Fork and clone this repository, cd into thawed/, open index.html, and begin playing!
+##### Fork and clone this repository, cd into thawed/, open index.html in terminal, and begin playing!
 
 ---
 
