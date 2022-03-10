@@ -124,6 +124,14 @@ img {
   margin-top: 10px;
 }
 
+.amount-defrosted {
+  font-family: 'Nosifer', cursive;
+  font-size: 20px;
+  -webkit-text-fill-color: #dfe7f2;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #3b4859;
+}
+
 .wip-wrapper {
   color: #f28500;
   margin-top: 15px;
