@@ -189,11 +189,6 @@ img {
   background-color: #7d9a68;
 }
 
-.instructions-wrapper p {
-  margin: 10px 0;
-  font-weight: bold;
-}
-
 #welcome-heading,
 #instructions-heading {
   margin: 15px 0;
@@ -201,4 +196,9 @@ img {
 
 #description-subheading {
   margin-bottom: 10px;
+}
+
+.instructions-wrapper p {
+  margin: 10px 0;
+  font-weight: bold;
 }
