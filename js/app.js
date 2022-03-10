@@ -142,11 +142,13 @@ const handleFormSubmission = (event) => {
   // Prevent the user from leaving the field blank
   if (!mysteryWordInput.value.trim().length) {
     alert('The mystery word cannot be blank!')
+    mysteryWordInput.value = ''
     return
   }
   // Ensure the mysteryWord only contains letters
   if (!mysteryWordInput.value.match(/^[a-zA-Z]+$/)) {
     alert('Please enter a valid word.')
+    mysteryWordInput.value = ''
     return
   }
   // Store a sanitized mysteryWord that's uppercased
