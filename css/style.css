@@ -85,8 +85,7 @@ form {
 }
 
 form input {
-  font-family: inherit;
-  padding: 3px;
+  padding: 4px;
   outline: none;
 }
 
