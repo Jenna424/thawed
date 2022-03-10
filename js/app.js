@@ -173,8 +173,12 @@ const handleFormSubmission = (event) => {
 // Clears the mystery word and displays the empty form for mystery word submission
 const resetMysteryWord = () => {
   mysteryWord = ''
-  mysteryWordForm.classList.remove('hidden')
-  mysteryWordForm.classList.add('visible')
+  if (mysteryWordForm.classList.contains('hidden')) {
+    mysteryWordForm.classList.remove('hidden')
+  }
+  if (!mysteryWordForm.classList.contains('visible')) {
+    mysteryWordForm.classList.add('visible')
+  }
   mysteryWordInput.value = ''
 }
 
