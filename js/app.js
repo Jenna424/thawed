@@ -59,7 +59,7 @@ const spellWordInProgress = () => {
     return selectedLetters.includes(ltr) ? ltr : '*'
   })
   const wordInProgressSpanStrings = wordInProgressChars.map((char) => {
-    return `<span class="wip-part">${char}</span>`
+    return `<span class="word-in-progress-part">${char}</span>`
   })
   wordScratchpad.innerHTML = wordInProgressSpanStrings.join('')
 }
