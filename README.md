@@ -16,9 +16,9 @@
 
 ### **_Technologies Used_**
 
-- HTML
-- CSS
-- JavaScript
+- Programming Languages: HTML5, CSS3, JavaScript
+- Styling: Google Fonts, Unsplash
+- Project Planning: Trello
 
 ---
 
