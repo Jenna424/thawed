@@ -28,6 +28,17 @@
 
 ---
 
+### **_Features_**
+
+- Navigation between main game homepage and instructions page
+- Form for mystery word submission
+- Melting snowman images updated on each incorrect guess
+- Incorrect guess count displayed
+- Current state of the spelled word updated on each correct guess
+- Alphabet buttons that can each be clicked only once, when the game is in progress
+- Game status notification to alert the user if the game is won or lost
+- Restart game button to reset game defaults
+
 ### **_Future Updates_**
 
 - [x] Display the correct word on game loss
