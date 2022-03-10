@@ -23,6 +23,7 @@
 - Programming Languages: HTML5, CSS, JavaScript
 - Styling: Google Fonts, Unsplash
 - Project Planning: [Trello](https://trello.com/b/fQa8dzCh/p1-trello-for-hangman-adaptation).
+- Development Tools: Visual Studio Code, Rubular regular expression editor
 
 ---
 
