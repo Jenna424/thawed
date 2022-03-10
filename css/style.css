@@ -120,7 +120,7 @@ input[type='submit']:hover {
 img {
   width: 300px;
   height: 400px;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .wip-wrapper {
