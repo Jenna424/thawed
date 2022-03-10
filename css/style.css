@@ -28,7 +28,7 @@ h1 {
   -webkit-text-stroke-color: cornflowerblue;
 }
 
-body.instructions-body h1 {
+.instructions-body h1 {
   -webkit-text-stroke-color: white;
 }
 
