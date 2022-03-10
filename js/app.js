@@ -34,9 +34,9 @@ const alphabetArray = [
   'Y',
   'Z'
 ]
+let isGameOver = false
 let mysteryWord = ''
 let wordInProgressChars = []
-let isGameOver = false
 let selectedLetters = []
 let incorrectGuessCount = 0
 const incorrectGuessCap = 9
