@@ -24,7 +24,7 @@
 
 ### **_Getting Started_**
 
-##### Navigate to [the game's website] (https://thawed.surge.sh/), enter a word of your choice in the form, and have another player guess the letters included in the word by clicking the alphabet buttons.
+##### Navigate to [the game's website](https://thawed.surge.sh/), enter a word of your choice in the form, and have another player guess the letters included in the word by clicking the alphabet buttons.
 
 ---
 
