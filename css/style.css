@@ -93,7 +93,6 @@ form input[type='password'] {
 input[type='submit'] {
   font-family: inherit;
   color: #f28500;
-  cursor: pointer;
   border: none;
   border-radius: 5px;
   padding: 5px;
@@ -102,6 +101,7 @@ input[type='submit'] {
 input[type='submit']:hover {
   color: white;
   background-color: #f28500;
+  cursor: pointer;
 }
 
 .hidden {
