@@ -82,15 +82,12 @@ a:hover {
 
 form {
   margin: 20px 0;
+  color: #f28500;
 }
 
 form input {
   padding: 4px;
   outline: none;
-}
-
-form label {
-  color: #f28500;
 }
 
 input[type='submit'] {
