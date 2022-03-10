@@ -104,6 +104,7 @@ const setSnowmanSketch = () => {
 const handleLetterExclusion = () => {
   incrementIncorrectGuessCount()
   setSnowmanSketch()
+  // Delegates to a helper to declare defeat if the user has met or exceeded the permitted number of incorrect guesses
   if (incorrectGuessCount >= incorrectGuessCap) {
     endGame()
   }
