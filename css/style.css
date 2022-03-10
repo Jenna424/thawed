@@ -85,7 +85,7 @@ form {
   color: #f28500;
 }
 
-form input {
+form input[type='password'] {
   padding: 4px;
   outline: none;
 }
