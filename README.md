@@ -56,4 +56,6 @@
 
 ##### **MDN Documentation:** [mozilla.org](https://developer.mozilla.org/en-US/)
 
-##### **Unsplash:** [unsplash.com](https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80)
+##### **Unsplash snow landscape photo:** [unsplash.com](https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80)
+
+##### **Unsplash snowman photo:** [unsplash.com](https://images.unsplash.com/photo-1609242785289-a53f498a8a8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
