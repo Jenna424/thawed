@@ -39,6 +39,8 @@
 - Game status notification to alert the user if the game is won or lost
 - Restart game button to reset game defaults
 
+---
+
 ### **_Future Updates_**
 
 - [ ] Keep track of game history and display game statistics
