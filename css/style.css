@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #c5d4eb;
+  background-color: #c5d4ef;
   font-family: 'Lora', serif;
   width: 100vw;
   height: 100vh;
@@ -53,13 +53,14 @@ li:last-child {
 
 a {
   text-decoration: none;
-  color: #57a0d3;
+  color: lightgoldenrodyellow;
+  font-weight: bold;
   padding: 5px;
 }
 
 a:hover {
   color: lightgoldenrodyellow;
-  background-color: #57a0d3;
+  background-color: #b2c2db;
   border-radius: 3px;
 }
 
