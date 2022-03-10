@@ -160,7 +160,12 @@ const handleFormSubmission = (event) => {
   // Display the mystery word as a series of asterisks
   spellWordInProgress()
   // Hide the form
-  mysteryWordForm.classList.add('hidden')
+  if (mysteryWordForm.classList.contains('visible')) {
+    mysteryWordForm.classList.remove('visible')
+  }
+  if (!mysteryWordForm.classList.contains('hidden')) {
+    mysteryWordForm.classList.add('hidden')
+  }
   // Generate the alphabet buttons
   buildAlphaButtons()
 }
