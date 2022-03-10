@@ -12,7 +12,7 @@
 
 ##### An adaptation of the popular "Hangman" word game for Project 1 of GA's SEIR. This kid-friendly rendition of Hangman uses photos of hand-drawn snowman sketches instead of the traditional gallows images. First, one player submits a mystery word in the form. The other player must guess the correct word by selecting letters one by one from a series of alphabet buttons. For each correct guess, the spelling of the guessed word is revised to fill in the clicked letter. For each incorrect guess, an appendage of the snowman disappears by replacing the image that depicts the snowman's stage of melting. The goal of the game is to correctly guess the word before reaching a total of nine incorrect guesses, at which point the snowman has fully melted.
 
-##### Navigate to [the game's website](https://thawed.surge.sh/) and begin playing!
+##### Navigate to [the game website](https://thawed.surge.sh/) and begin playing!
 
 ![Image](https://images.unsplash.com/photo-1609242785289-a53f498a8a8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
 
