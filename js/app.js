@@ -65,6 +65,7 @@ const spellWordInProgress = () => {
   wordScratchpad.innerHTML = wordInProgressSpanStrings.join('')
 }
 
+// Accepts a boolean that indicates whether the game is won or lost and displays a message to declare victory or defeat
 const endGame = (victoriously = false) => {
   isGameOver = true
   if (victoriously) {
