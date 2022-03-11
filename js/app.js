@@ -41,6 +41,7 @@ let selectedLetters = []
 let incorrectGuessCount = 0
 const incorrectGuessCap = 9
 
+// Returns true if the given string letter is found in the array of previously selected letters
 const getIsLetterSelected = (letter) => {
   return selectedLetters.some((selectedLetter) => selectedLetter === letter)
 }
