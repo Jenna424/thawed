@@ -54,6 +54,7 @@ const getIsLetterCorrect = (letter) => {
   return mysteryWord.includes(letter)
 }
 
+// Renders the current state of the word being guessed, which is composed of letters and/or asterisks
 const spellWordInProgress = () => {
   wordInProgressChars = mysteryWord.split('').map((ltr) => {
     return selectedLetters.includes(ltr) ? ltr : '*'
