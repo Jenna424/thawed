@@ -46,6 +46,7 @@ const getIsLetterSelected = (letter) => {
   return selectedLetters.some((selectedLetter) => selectedLetter === letter)
 }
 
+// Selects the clicked alphabet button by applying a class to the element and adding its letter value to the array of selected letters
 const selectLetter = (clickedAlphaButton) => {
   clickedAlphaButton.classList.add('selected')
   selectedLetters.push(clickedAlphaButton.value)
