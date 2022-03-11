@@ -52,6 +52,7 @@ const selectLetter = (clickedAlphaButton) => {
   selectedLetters.push(clickedAlphaButton.value)
 }
 
+// Returns true if the given string letter is found in the submitted mystery word
 const getIsLetterCorrect = (letter) => {
   return mysteryWord.includes(letter)
 }
